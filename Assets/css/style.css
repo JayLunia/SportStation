@@ -1,0 +1,203 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif; /* Set font family */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Banner images in a slider */
+#banners img {
+  width: 100%; /* Image fills full width */
+  height: 60vh; /* Set height to 60% of viewport height */
+  filter: brightness(70%); /* Darken the image for better text contrast */
+  transition: transform 1s ease; /* Smooth transition for hover effect */
+}
+
+/* Sidebar styling */
+#sidebar {
+  background-color: black; /* Sidebar background color */
+  width: 15%; /* Set width of the sidebar */
+  height: 100vh; /* Full height of viewport */
+  position: fixed; /* Fix the sidebar in place */
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+/* Main content wrapper */
+#page-content-wrapper {
+  margin-left: auto; /* Move content beside sidebar */
+  width: 85%; /* Main content occupies the rest of the page */
+}
+
+/* Scrollable sports list in the sidebar */
+.sports-list {
+  /* height: 60%; Height of sports list */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Sidebar header styling */
+.sidebar-header {
+  padding: 20px; /*Padding around sidebar header */
+}
+
+/* Individual items in sports list */
+.sports-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px; /* Padding for each list item */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.2s; /* Smooth background change on hover */
+}
+
+/* Hover effect for sports list items */
+.sports-list li:hover {
+  background-color: whitesmoke; /* Background color on hover */
+  color: #212529; /* Text color on hover */
+}
+
+/* Search bar styling */
+#search {
+  margin-bottom: 10px; /* Add space below search bar */
+}
+
+/* Navbar search input */
+.navbar-search {
+  width: 100%;
+  background-color: #222; /* Dark background */
+  border: 1px solid #cfc7c7; /* Light border */
+  color: #fff; /* White text */
+  padding: 8px 15px; /* Padding inside input */
+  border-radius: 5px; /* Rounded corners */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover/focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Placeholder text styling */
+.navbar-search::placeholder {
+  color: #888; /* Placeholder text color */
+}
+
+/* Hover and focus effects for navbar search input */
+.navbar-search:hover,
+.navbar-search:focus {
+  background-color: #333; /* Darker background on hover/focus */
+  border-color: #555; /* Darker border */
+}
+
+/* General card styling */
+.card {
+  outline: none !important; /* Remove outline */
+  border: none !important; /* Remove border */
+  overflow: hidden; /* Hide overflow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transitions */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* Image styling for cards */
+.card-img-top {
+  border-bottom: 2px solid #ddd; /* Bottom border for the image */
+  width: 100%; /* Full width image */
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Ensure the image covers the area */
+}
+
+/* Hover effect for league cards */
+.league-card:hover .card {
+  transform: translateY(-5px); /* Lift card slightly */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+/* Search input for leagues */
+#search-league {
+  width: 100%; /* Full width input */
+  border-radius: 3px; /* Rounded corners */
+  border: 2px solid #333; /* Border around input */
+  background-color: transparent; /* Transparent background */
+  font-size: 14px; /* Font size */
+  color: #333; /* Text color */
+  outline: none; /* Remove outline */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+  transition: all 0.3s ease-in-out; /* Smooth transitions */
+}
+
+/* Placeholder styling for search-league input */
+#search-league::placeholder {
+  color: #999; /* Placeholder text color */
+  font-size: 16px; /* Larger placeholder text */
+}
+
+/* Hover and focus effects for search-league input */
+#search-league:hover,
+#search-league:focus {
+  background-color: #fff; /* White background on hover/focus */
+  border-color: #666; /* Darker border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Larger shadow */
+}
+
+/* Favorite sports section */
+#favorite-sports-section {
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding inside section */
+  margin-top: 20px; /* Add space above section */
+}
+
+/* Sport card styling */
+.sport-card .card {
+  border: 1px solid #ccc; /* Light border around cards */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Padding inside card */
+  background-color: #343a40; /* Dark background for the card */
+}
+
+/* Sport card title styling */
+.sport-card .card h5 {
+  margin: 0; /* Remove margin around title */
+  font-size: 18px; /* Font size for card title */
+}
+
+/* Container for favorite sports with horizontal layout */
+#favorite-sports-container {
+  display: flex; /* Enable horizontal stacking */
+  flex-wrap: nowrap; /* Prevent wrapping of items */
+  overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Style individual favorite sports */
+.favorite-sport {
+  cursor: pointer; /* Pointer cursor on hover */
+  display: inline-block; /* Display as inline block */
+  margin-right: 15px; /* Space between sports */
+  padding: 5px 10px; /* Padding inside sport button */
+  background-color: #f1f1f1; /* Light background */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 3px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  white-space: nowrap; /* Prevent sport name from wrapping */
+}
+
+/* Hover effect for favorite sports */
+.favorite-sport:hover {
+  background-color: #5a5c5e; /* Darker background on hover */
+  color: white; /* White text on hover */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+
+.heart-icon {
+  z-index:99999;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.heart-icon:hover {
+  color: pink; /* Selected heart */
+}
+
+.far.fa-heart {
+  color: #bbb; /* Unselected heart */
+}
+
+.fas.fa-heart {
+  color: pink; /* Selected heart */
+}
+
