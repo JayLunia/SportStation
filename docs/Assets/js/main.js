@@ -126,7 +126,7 @@ $(document).ready(function () {
             leagueList.append(`
                     <div class="col league-card p-2">
                         <div class="card">
-                            <img src="./Assets/images/${league.name.toLowerCase()}.png" class="card-img-top" alt="${league.name} Logo">
+                            <img src="./Assets/Images/leagues/${league.name.toLowerCase()}.png" class="card-img-top" alt="${league.name} Logo">
                             <div class="card-body bg-dark text-white">
                                 <h5 class="card-title">${league.name}</h5>
                                 <p class="card-text">${country.charAt(0).toUpperCase() + country.replace(/_/g, ' ').slice(1)}</p>
@@ -151,7 +151,7 @@ $(document).ready(function () {
                 leagueList.append(`
                         <div class="col league-card p-2">
                             <div class="card">
-                                <img src="./Assets/images/${league.name.toLowerCase()}.png" class="card-img-top" alt="${league.name} Logo">
+                                <img src="./Assets/Images/leagues/${league.name.toLowerCase()}.png" class="card-img-top" alt="${league.name} Logo">
                                 <div class="card-body bg-dark text-white">
                                     <h5 class="card-title">${league.name}</h5>
                                     <p class="card-text">${country.charAt(0).toUpperCase() + country.replace(/_/g, ' ').slice(1)}</p>
