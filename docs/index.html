@@ -62,10 +62,10 @@
                 const email = $('#email').val().trim();
                 const password = $('#password').val().trim();
 
-                if (email === "devlunia@gmail.com" || password === "sportstation@dev") {
-                    alert("Please fill in both email and password.");
-                } else {
+                if (email === "devlunia@gmail.com" && password === "sportstation@dev") {
                     window. location. replace("main.html")
+                } else {
+                    alert("Please fill in both email and password.");
                 }
             });
         });
